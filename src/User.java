@@ -13,9 +13,9 @@ public class User {
 
     public User(String name){
         this.name = name;
-        this.posts = new LinkedHashMap<Integer, Post>();
+        this.posts = new LinkedHashMap<>();
         this.following = new HashSet<>();
-        this.favorites = new TreeSet<Post>();
+        this.favorites = new TreeSet<>();
     }
     public void follow(User user){
         following.add(user);

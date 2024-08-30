@@ -20,8 +20,7 @@ public class Post implements Comparator<Post> {
     }
     public String getPostTime(){
         DateTimeFormatter myFormatObj = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
-        String formattedDate = time.format(myFormatObj);
-        return formattedDate;
+        return time.format(myFormatObj);
     }
 
     public int getPostId(){
